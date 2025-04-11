@@ -1,4 +1,7 @@
 /* Global ClassNames */
+body{
+    font-family: "Roboto", sans-serif;
+}
 .rounded-xs{
     border-radius : 2px;
 }
@@ -17,9 +20,52 @@
 .rounded-2xl{
     border-radius: 16px;
 }
-/* AddTocart Button */
-button.AddTocart{
+/* border radius on right (top & bottom) */
+.rounded-s-xl{
+    border-start-start-radius: 12px;
+    border-end-start-radius: 12px;
+}
+.rounded-s-2xl{
+    border-start-start-radius: 12px;
+    border-end-start-radius: 12px;
+}
+/* General Button */
+button{
     outline: none;
     border: none;
+    cursor: pointer;
     padding: 8px 15px;
+    position: relative;
+}
+/* Delete Button */
+button.Delete::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 35px;
+    transform: translateY(-50%);
+    width: 2px;
+    height: 60%;
+    background-color: white;
+}
+/* Add To Cart Button */
+button.AddToCart::after{
+    content: "";
+    border-left: 23px solid blue;
+    border-top: 15px solid transparent;
+    border-right: 23px solid transparent;
+    border-bottom: 18px solid transparent;
+    position: absolute;
+    right: -46px;
+}
+/* Contact Button */
+button.Contact{
+    transform: skew(20deg);
+}
+button.Contact span{
+    transform: skew(-20deg);
+}
+/* More Button */
+button.More{
+    width: 120px;
 }
