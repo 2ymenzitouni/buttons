@@ -1,10 +1,12 @@
 import './App.css'
+import './index.css'
 import AddTocart from './components/addTocart/addTocart'
 import { FaShoppingCart } from "react-icons/fa";
+
 function App() {
   return(
     <>
-      <AddTocart buttonName={'Add To Cart'} icon={<FaShoppingCart/>} bgColor={'blue'} textColor={'white'}/>
+      <AddTocart buttonName={'Add'} icon={<FaShoppingCart/>} bgColor={'blue'} textColor={'white'} borderRadius={'2xl'}/>
     
     </>
   )

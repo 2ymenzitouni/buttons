@@ -1,0 +1,25 @@
+/* Global ClassNames */
+.rounded-xs{
+    border-radius : 2px;
+}
+.rounded-sm{
+    border-radius : 4px;
+}
+.rounded-md{
+    border-radius : 6px;
+}
+.rounded-lg{
+    border-radius : 8px;
+}
+.rounded-xl{
+    border-radius : 12px;
+}
+.rounded-2xl{
+    border-radius: 16px;
+}
+/* AddTocart Button */
+button.AddTocart{
+    outline: none;
+    border: none;
+    padding: 8px 15px;
+}
